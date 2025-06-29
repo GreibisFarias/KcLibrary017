@@ -12,7 +12,7 @@ let package = Package(
             targets: ["KcLibrary017"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/evgenyneu/keychain-swiFt", from: "20.0.0")
+        .package(url: "https://github.com/evgenyneu/keychain-swift", from: "20.0.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
