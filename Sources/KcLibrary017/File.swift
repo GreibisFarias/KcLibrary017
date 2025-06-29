@@ -8,7 +8,7 @@ import Foundation
 import KeychainSwift
 
 
-public struct keyChainKC{
+public struct keyChainKC {
     
     public init(){}
     
@@ -22,14 +22,15 @@ public struct keyChainKC{
     }
     
     public func loadKC(key: String) -> String?{
-        if let data = KeychainSwift().get(key)
+        if let data = KeychainSwift().get(key){
             return data
-    }else{
-        return ""
-    }
-    
-    @discardableResult
-    public func deleteKC(key: String) -> Bool{
-        KeychainSwift().delete(key)
+        }else{
+            return ""
+        }
+        
+        @discardableResult
+        public func deleteKC(key: String) -> Bool{
+            KeychainSwift().delete(key)
+        }
     }
 }

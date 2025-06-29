@@ -19,7 +19,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "KcLibrary017",
-            dependencies: [.product(name: "KeyChain", package: "keychain-swift")]),
+            dependencies: [.product(name: "KeychainSwift", package: "keychain-swift")]),
+        
         .testTarget(
             name: "KcLibrary017Tests",
             dependencies: ["KcLibrary017"]),
