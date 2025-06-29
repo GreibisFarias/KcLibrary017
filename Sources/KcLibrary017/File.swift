@@ -28,9 +28,10 @@ public struct keyChainKC {
             return ""
         }
         
-        @discardableResult
-        public func deleteKC(key: String) -> Bool{
-            KeychainSwift().delete(key)
         }
+    @discardableResult
+    public func deleteKC(key: String) -> Bool{
+        KeychainSwift().delete(key)
+        
     }
 }
